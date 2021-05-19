@@ -1,2 +1,2 @@
-# responsive-page
-una pagina web adaptable
+# diseño web adaptable
+una pagina web adaptable simple
