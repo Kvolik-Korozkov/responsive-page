@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<link rel="StyleSheet" href="style.css">
+	<script defer src="script.js"></script>
+	<title>Kvolik Korozkov</title>
+</head>
+<body>
+	<div id="bg"></div>
+	<div class="FloatingMenu">
+		<!-- displays current section name -->
+		<p id="actualPage" style="margin: 0px 0px">Inicio</p>
+		
+		<!-- when clicked, displays FloatingMenu, if clicked again, hides FloatingMenu -->
+		<button id="showMenu" onclick="toggleMenu();">
+			
+			<svg id="arrow" width="50" height="50">
+				<line x1="0" y1="12.5" x2="50" y2="12.5" style="stroke:white;stroke-width:4;"/>
+				<line x1="0" y1="25"   x2="50" y2="25"   style="stroke:white;stroke-width:4;"/>
+				<line x1="0" y1="37.5" x2="50" y2="37.5" style="stroke:white;stroke-width:4;"/>
+			</svg>
+			
+		</button>
+		
+		<div id="menu">
+			<button class="goto">
+				<p onclick="gotoIndex();">Inicio</p>
+			</button>
+			<button class="goto">
+				<p onclick="gotoAbout();">Acerca de</p>
+			</button>
+			<button class="goto">
+				<p onclick="gotoContact();">Contacto</p>
+			</button>
+		</div>
+	</div>
+	
+	<div class="display">
+		<div id="index">
+			<h1>Inicio</h1>
+			<br>
+			<p>
+			Aliquam erat volutpat. Sed scelerisque sagittis ipsum, eu dictum purus venenatis et. Pellentesque quis erat nibh. Suspendisse sed nisl quis nisl vestibulum scelerisque. Etiam sit amet massa vitae metus semper convallis laoreet. 
+			</p>
+		</div>
+		
+		<div id="about">
+			<h2>Acerca de</h2>
+			<br>
+			<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae ipsum nec libero dapibus lacinia. Ut interdum ultrices tortor vel fermentum. Donec et semper lacus. Nullam fermentum rutrum odio, in dictum tortor lobortis a. Ut ornare id lacus id sagittis. Pellentesque placerat ex sed dictum accumsan. Morbi a ipsum faucibus, porttitor nibh eget, vestibulum quam. Morbi interdum tellus nunc, at facilisis odio suscipit vitae. Aliquam imperdiet, eros elementum iaculis maximus, orci nisi ullamcorper nulla, a fringilla sapien nisl vel metus. Curabitur eu iaculis lacus, a tincidunt tortor. Fusce eros mi, placerat non suscipit eget, congue et nulla. Morbi malesuada fringilla vehicula. Nullam bibendum orci eget nisl convallis malesuada. Praesent ut turpis nisi. In purus ante, auctor non dolor non, lacinia sagittis mauris.
+			</p>
+		</div>
+		
+		<div id="contact">
+			<h2>Contacto</h2>
+			<br>
+			<p>
+			Nihil libero minima nulla. Rem nihil vero dolorem cum consequatur quia ducimus qui. Repellat iusto consequuntur dolorem inventore nam reiciendis molestias sit. Tenetur in sint aperiam fuga sed rerum quaerat fugiat. Sed rem voluptatem itaque non occaecati aspernatur
+			</p>
+			
+			<table>
+				<form>
+					<tr>
+						<td>
+							<p class="_form">nombre &amp; apellido</p>
+						</td>
+						<td>
+							<input type="text" size="70">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<p class="_form">correo electrónico</p>
+						</td>
+						<td>
+							<input type="text" size="70">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<p class="_form">comentario</p>
+						</td>
+						<td>
+							<input type="textfield" size="70">
+						</td>
+					</tr>
+				</form>
+			</table>
+			</p>
+		</div>
+	</div>
+</body>
+</html>
