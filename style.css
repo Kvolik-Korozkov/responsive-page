@@ -122,11 +122,11 @@ p{
 /* || form */
 #contact p{
 	margin: 0 auto;
-	width: 100%; /* 100vw doesn't work here BUT */
+	width: 100vw;
 }
 table{
-	margin: 0 auto;
-	width: 100vw; /* ...why does this work here? I don't get it */
+	margin: auto;
+	width: 100vw;
 }
 ._form{
 	margin: 0%;
