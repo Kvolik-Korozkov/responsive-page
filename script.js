@@ -66,4 +66,5 @@ function gotoContact(){
 // changes top-left text with current section name
 function currentSection(text){
 	document.getElementById("actualPage").innerHTML = text;
+	document.title = "Gabriel Burgos - " + text;
 }
